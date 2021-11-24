@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simranjit Website</title>
+    <script src="band.js"></script>
+    <link rel="stylesheet" href="band.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p class="alignLeft" id="flute" >Flute</p>
+            <p class="alignLeft" id="guitar" >Guitar</p>
+            <p class="alignLeft" id="harp" >Harp</p>
+            <p class="alignLeft" id="saxophone" >Saxophone</p>
+        </div>
+        <div>
+            <div>
+                <a id="button1" class="button" onclick="playFlute()">Play</a>
+                <input class="volume" id="volumeslider" type="range" min="0" max="1" value="1" step="0.1" oninput="sliderChange1(this.value)">
+                <output style="display : none" class="slider" id="sliderVal1"> </output>
+                <input class="loop" type="checkbox" id="loop1" onclick="loopAudio1()">
+                <p id="volume" class="text">Volume</p>
+                <p id="loop" class="text">Loop</p>
+            </div>
+            <div>
+                <a id="button2" class="button" onclick="playGuitar();">Play</a>
+                <input class="volume" id="volumeslider2" type="range" min="0" max="1" value="1" step="0.1" oninput="sliderChange2(this.value)">
+                <output class="slider" id="sliderVal2"> </output>
+                <input class="loop" type="checkbox" id="loop2" onclick="loopAudio2()">
+            </div>
+            <div>
+                <a id="button3" class="button" onclick="playHarp();">Play</a>
+                <input class="volume" id="volumeslider3" type="range" min="0" max="1" value="1" step="0.1" oninput="sliderChange3(this.value)">
+                <output class="slider" id="sliderVal3"> </output>
+                <input class="loop" type="checkbox" id="loop3" onclick="loopAudio3()">
+            </div>
+            <div>
+                <a id="button4" class="button" onclick="playSaxophone();">Play</a>
+                <input class="volume" id="volumeslider4" type="range" min="0" max="1" value="1" step="0.1" oninput="sliderChange4(this.value)">
+                <output class="slider" id="sliderVal4"> </output>
+                <input class="loop" type="checkbox" id="loop4" onclick="loopAudio4()">
+            </div>
+        </div>
+        <div>
+            <a id="button5" class="button" onclick="playAll();">Play All</a>
+        </div>
+    </div>
+    <script src="band.js"></script>
+</body>
+</html>
